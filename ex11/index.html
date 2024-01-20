@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body><h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture><!--A tag picture é para inserir outras fontes de imagem (vai ficar tudo num "bolo só", caso contrário, iria aparecer todas as imagens de uma vez no site. Mas nós não queremos isso, queremos é fazer aparecer as imagens de tamanho adequado a cada tela)-->
+        
+        <source media="(max-width:750px)" srcset="Imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        
+        
+        <img src="Imagens/foto-g.png" alt="Foto flexível">
+        <!-- Source media type, indicará as condições para a imagem ser mostrada na tela. Nos casos aqui são em relação ao tamanho do navegador (acima de determinado tamanho em px*, a imagem mostrada mudará). 
+        E a ordem dos códigos tem que ser mantida!*-->
+    </picture>
+    <h1>Reproduzindo áudio</h1> <!-- Essa é a maneira simples de adicionar áudio! Tag audio para inserir o audio e o comando controls para o player aparecer no navegador e autoplay para já abrir o áudio assim que abrir a página-->
+    <audio src="midia/musicaruim.mp3" controls></audio>   
+        
+   <audio preload="metadata" controls loop>
+        <source src="midia/musicaruim.mp3" type="audio/mpeg">
+   </audio><!-- Aqui é outra forma de inserir os áudios, botando um source src no meio de uma tag audio. Dá pra botar os modelos mp3,wav e ogg-->
+
+   <h2>Os parâmetros:
+    <ul>
+        <li>preload - Diz a maneira como o áudio será  carregado quando entrar na página (metadata, none ou auto) </li>
+         <ul>
+            metadada - Carrega somente algumas info do áudio, como duração, copyright...
+            auto - Carrega todo o áudio ao entrar na página
+            none - Nunca carrega o áudio ao abrir
+         </ul>
+        <li>controls - adiciona o player na página</li>
+        <li>loop - coloca o áudio para reiniciar</li>
+        <li>autoplay - já abre a página tocando</li>
+    </ul>
+   </h2>
+        
+</body>
+</html>

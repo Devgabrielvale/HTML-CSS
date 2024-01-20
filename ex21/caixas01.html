@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style> 
+    h1 { /*box-level*/
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: rgb(12, 12, 44);
+
+        border: 15px solid rgb(12, 12, 44);
+
+        /* Acima vemos uma ShortHand. Deve seguir essa sequência*/
+
+        padding: 40px ; 
+        /* Aqui a ShortHand é feita colocando apenas um valor no padding. É entendido como se todos valores fossem iguais.
+        No caso se colocar 2 valores apenas, será entendido como 1 para top/bottom e 1 para left/right */
+
+        
+         
+       
+        margin: 80px auto;
+         
+
+        outline: 10px dashed blue;
+        
+    }
+
+    a { /*inline-level*/
+        border-width: 15px;
+        border-style: solid;
+        border-color: chartreuse;
+        padding: 6px 6px 6px 6px;
+        display: inline;
+        
+    }
+
+    div > p {
+        display: none;
+    }
+    
+    div:hover > p {
+        display: block;
+    }
+        
+
+    </style>
+</head>
+<body>
+    <h1> Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#" target="_blank"> links são exemplos de caixas inline-level</a></p>
+
+
+    
+        <h2>Texto escondido</h2>
+    <div>  Passe o mouse Aqui
+        <p>SURPRESA!!</p>
+    </div>
+</body>
+</html>

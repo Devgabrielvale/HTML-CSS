@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos externos</title>
+    <!--A grande vantagem aqui é que da pra aplicar os estilos de maneira geral, ao invés de ficar fazendo para cada item. Esse aqui para todas páginas-->
+    <link rel="stylesheet" href="exerciciodeestilo.css">
+    <style>
+        h1 {
+            text-decoration: underline;
+        }
+        
+    </style>
+    
+</head>
+<body">
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, in ex? Distinctio laborum saepe repellat sequi esse praesentium autem, vitae, quasi beatae eos nesciunt ea, natus tenetur voluptates iste modi.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda ab laboriosam neque! Repellat totam debitis a assumenda quasi architecto accusantium! Rerum repellendus qui dolorem optio, assumenda molestiae cum error.</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quis consequuntur eos magnam eum? Consequatur, quidem illum. Dolorem praesentium amet sint, magni voluptatum cupiditate error ducimus mollitia culpa, expedita rem.</p>
+    <!-- Estilo inline é mudar a "decoração" do itens em cada linha. Por exemplo como eu estava fazendo mudando a cor das letras e do background nos exercícios anteriores. Não é muito bom porque tem que fazer item por item-->
+
+    <p style="text-align: right;"><a href="page-2.html" target="_self">Ir para a página 2</a></p>
+
+    <!-- Num mesmo arquivo eu posso usar o css inline, interno externo. Mas a força pra decidir qual irá aparecer é:
+    1° - inline
+    2° - interno/local
+    3° - externo-->
+
+<picture>
+    <source media="(max-width:1050px)" srcset="../ex11/Imagens/foto-m.png" type="image/png">    
+<img src="../ex11/Imagens/foto-g.png" alt="foto grande">
+</picture>
+</body>
+</html>

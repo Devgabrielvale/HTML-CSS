@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgba(117, 115, 115, 0.637), rgba(19, 17, 17, 0.781));
+        }
+
+        header { 
+            background-color: rgb(192, 195, 197);
+            padding: 10px;
+            margin: 20px;
+
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: rgb(112, 112, 112);
+        }
+        main {
+            padding: 20px;
+            margin: 20px;
+            background-color: aliceblue;
+            border-radius: 4px;
+            box-shadow: 4px 2px 9px 4px rgba(0, 0, 0, 0.205);
+
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        nav { 
+            background-color: rgb(170, 168, 168);
+            padding: 3px;
+            box-shadow: inset 0px 1px 4px 10px rgba(43, 42, 42, 0.404);
+        }
+        nav > a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            font-size: 1.1em;
+            color: rgb(58, 24, 14);
+        }
+        
+        section {
+            background-color: yellowgreen;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        section > a:hover {
+            text-decoration: underline;
+            font-size: 1.1em;
+            color: rgb(58, 24, 14);
+            
+        }
+        section > a { 
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        section#assuntos > a {
+            margin-left: 70px;
+            margin-right: 50px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px 50px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            text-align: center;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        
+            <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">ESPORTES</a>
+            <a href="#">POLÍTICA </a>
+            <a href="#">TECNOLOGIA</a>
+        </section>
+        <section id="noticias"> 
+            <a href="#">POPULARES</a>
+            <a href="#">ENTREVISTAS</a>
+            <a href="#">POADCAST</a>
+
+        </section>
+        <article>    
+        <h2>Notícia sobre o Brasil</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officiis nihil optio mollitia, nobis doloremque? Vitae recusandae quibusdam minus in perspiciatis labore suscipit quos doloremque veniam, molestias, obcaecati sed magnam.</p> 
+        
+        <aside> 
+        <p>Artigo escrito por José da Silva </p> 
+        
+        </aside> 
+        </article>
+            
+        <article>
+        </article>
+        
+    </main>
+    <footer>
+    <p>Desenvolvido pelo Gbssauro</p>
+    </footer>
+    <div id="bola"> Uma bola:</div>
+
+</body>
+</html>

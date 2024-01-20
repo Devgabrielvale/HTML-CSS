@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+    font-family: bebas;
+    src: url(fontes/bebas.ttf);
+}
+
+header {
+            background-image: linear-gradient(to bottom, #3CD781, #15492c);
+            color: white;
+            font-family: bebas, Helvetica, sans-serif;
+            text-align: center;
+            margin: -8px -8px -27px -11px;
+            padding: 25px 0px 53px 0px;
+            box-shadow: -3px -5px 5px 6px #262c29;
+            font-size: 1.3em;
+        }
+a { 
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-right: 10px;
+
+ }
+
+ h2 {
+            font-family: android, helvetica, sans-serif;
+            color: #15492c;
+            font-size: 2em;
+            
+ }
+
+ body { 
+            background-color: #3CD781;
+           
+}
+
+main {
+            background-color: white;
+            padding: 20px;
+            margin: 12px 200px 20px 200px;
+            text-indent: 15px;
+            text-align: justify;
+            
+}
+
+p { 
+            font-family: Arial, Helvetica, sans-serif;
+            
+}
+
+h3 {
+            font-family: android, helvetica, sans-serif;
+            color: #15492c;
+            font-size: 1.3em;
+            background-image:linear-gradient(to right, #4bd88a4f, #acf3cc00);
+            padding: 3px 3px 3px 5px;
+}
+
+p > a {
+            color: #15492c;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 3px;
+            margin-right: 2px;
+
+}
+
+a:hover {
+            text-decoration: underline;
+            background-color: #3cd7825b;
+            border-radius: 10px;
+            padding: 15px;
+}
+
+.container {
+            margin: 10px 10px 10px 10px;
+            padding: 10px;
+}
+
+h4 {
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: #2da362;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+            margin:0px 0px
+}
+
+div.extra { 
+            background-color: #C5EBD6;
+            padding: 5px;
+            margin: 0px 0px;
+            border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+             color: white;
+             background-color: #1A5C38;
+             padding: 10px;
+             margin: -5px -8px -12px -8px;
+             text-align: center;
+             font-size: 1em;
+
+}
+
+footer > a {
+            font-size: 1.0em;
+            text-decoration: none;
+            margin: 0px;
+
+}
