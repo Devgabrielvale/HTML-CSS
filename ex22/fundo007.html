@@ -6,11 +6,33 @@
     <title>Alinhamento vertical</title>
     <style>
         #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+            position: relative;
 
+            /* a box que contém terá por padrão a position relativa*/
         }
 
         #conteudo {
-            
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+            left:50%;
+            top:50%;
+
+            transform: translate(-50%, -50%);
+            /* a box contída deverá receber position absolute*/
+
+            /* Depois disso, deverá ser ajustada a box conforme desejado, nos comendos left e top, podendo ser em pixel ou %.
+             No entanto, nesse tipo de configuração a centralização da box contída é realizada com base na ponta superior esquerda da box. Para centralizar a partir do centro da box de conteúdo é usado o comando "transform: translate". Nele se usa % ou pixels também para ajustar conforme desejado*/
+           
+
         }
 
     </style>
