@@ -1,1 +1,51 @@
-@charset "UTF-8"
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+
+    /* o * é utilizado para inserir configs globais ao css */
+}
+
+html, body {
+    background-color: darkgrey;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    /*para deixar as letras maiúsculas temos o 'text-transform: uppercase (deixa as letras gritantes) e temos o 'font-variant: smallcaps' (o mais bonito na minha opnião) */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+    
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
