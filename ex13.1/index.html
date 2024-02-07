@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos interno/local</title>
+    <link rel="stylesheet" href="estilo13.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
         body {
             background-color: rgb(188, 218, 245);
             font-family: Arial, Helvetica, sans-serif;
@@ -17,12 +19,20 @@
         h2 {
             color: blueviolet;
         }
-        p {color: rgb(245, 150, 9);}
+        p {color: rgb(245, 150, 9);
+            font-family: 'Passions Conflict', cursive;
+        }
+
+        h1 > p  {
+            font-family: 'Passions Conflict', cursive;
+        }
+
     </style>
     <!--A grande vantagem aqui é que da pra aplicar os estilos de maneira geral, ao invés de ficar fazendo para cada item. Esse aqui faz para a página inteira. No entanto tem um que faz para todas-->
 </head>
 <body">
     <h1>Capítulo 1</h1>
+    <p>Teste com a fonte conflict</p>
     <h2>Capítulo 1.1</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, in ex? Distinctio laborum saepe repellat sequi esse praesentium autem, vitae, quasi beatae eos nesciunt ea, natus tenetur voluptates iste modi.</p>
     <h2>Capítulo 1.2</h2>

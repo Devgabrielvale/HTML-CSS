@@ -2,13 +2,28 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em
 
     /* o * é utilizado para inserir configs globais ao css */
 }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3:'Passions Conflict', cursive;
+}
+    
+
+
 
 html, body {
     background-color: darkgrey;
     min-height: 100vh;
+    font-family: var(--fonte1);
+    
 }
 
 header {
@@ -21,6 +36,9 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 2em;
+
     /*para deixar as letras maiúsculas temos o 'text-transform: uppercase (deixa as letras gritantes) e temos o 'font-variant: smallcaps' (o mais bonito na minha opnião) */
 }
 
@@ -43,11 +61,14 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 10px;
+    font-family: var(--fonte3);
+    
 }
 
 section.normal {
     background-color: white;
     color: black;
+    
 }
 
 section.imagem {
